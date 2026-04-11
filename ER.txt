@@ -1,26 +1,32 @@
+Remote debugging
 
-Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
-$ cd openclaw/
+Allow remote debugging for this browser instance
+Turning on this setting allows external apps to request full control of this browser. This includes read access to your saved data, cookies and site data, and the ability to navigate to any URL.
 
-Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
-$ pnpm openclaw dashboard --no-open
+Only web developers should turn on this feature, and only use it with trusted apps.
 
-> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
-> node scripts/run-node.mjs "dashboard" "--no-open"
+Server running at: 127.0.0.1:9222
 
 
-🦞 OpenClaw 2026.4.11 (2681bbd) — If you're lost, run doctor; if you're brave, run prod; if you're wise, run tests.
 
-Dashboard URL: http://127.0.0.1:18789/#token=2109c107e90950c7a452bdd71731dd8c2fa9786bc7c83ecc
-Copied to clipboard.
-Browser launch disabled (--no-open). Use the URL above.
-
-Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
-$ pnpm openclaw list skills
-
-> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
-> node scripts/run-node.mjs "list" "skills"
-
-Terminate batch job (Y/N)? 
-^CThe system cannot open the device or file specified.
-
+16:02:44+05:30 [ws] ⇄ res ✓ node.list 2442ms conn=54a7d663…7428 id=deb9d71a…1949
+16:02:45+05:30 [agent] embedded run agent end: runId=23658613-7339-4266-8f92-bbe3b381e90c isError=true model=deepseek/deepseek-chat provider=openrouter error=⚠️ openrouter (deepseek/deepseek-chat) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key. rawError=402 Insufficient credits. This account never purchased credits. Make sure your key is on the correct account or org, and if so, purchase more at https://openrouter.ai/settings/credits
+16:02:46+05:30 [agent] embedded run failover decision: runId=23658613-7339-4266-8f92-bbe3b381e90c stage=assistant decision=fallback_model reason=billing provider=openrouter/deepseek/deepseek-chat profile=-
+16:02:46+05:30 [diagnostic] lane task error: lane=main durationMs=50339 error="FailoverError: ⚠️ openrouter (deepseek/deepseek-chat) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key."
+16:02:46+05:30 [diagnostic] lane task error: lane=session:agent:main:main durationMs=50366 error="FailoverError: ⚠️ openrouter (deepseek/deepseek-chat) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key."
+16:02:46+05:30 [model-fallback] model fallback decision: decision=candidate_failed requested=openrouter/deepseek/deepseek-chat candidate=openrouter/deepseek/deepseek-chat reason=billing next=deepseek/deepseek-chat detail=⚠️ openrouter (deepseek/deepseek-chat) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.
+16:02:51+05:30 [diagnostic] lane task error: lane=main durationMs=2884 error="FailoverError: Unknown model: deepseek/deepseek-chat"
+16:02:51+05:30 [diagnostic] lane task error: lane=session:agent:main:main durationMs=2890 error="FailoverError: Unknown model: deepseek/deepseek-chat"
+16:02:51+05:30 [model-fallback] model fallback decision: decision=candidate_failed requested=openrouter/deepseek/deepseek-chat candidate=deepseek/deepseek-chat reason=model_not_found next=groq/deepseek-r1-distill-llama-70b detail=Unknown model: deepseek/deepseek-chat
+16:02:59+05:30 [agent] embedded run agent end: runId=23658613-7339-4266-8f92-bbe3b381e90c isError=true model=deepseek-r1-distill-llama-70b provider=groq error=LLM request failed: provider rejected the request schema or tool payload. rawError=400 The model `deepseek-r1-distill-llama-70b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use …
+16:03:00+05:30 [ws] ⇄ res ✓ sessions.list 53ms conn=54a7d663…7428 id=4d81bd63…8fcd
+16:03:00+05:30 [agent] embedded run failover decision: runId=23658613-7339-4266-8f92-bbe3b381e90c stage=assistant decision=fallback_model reason=format provider=groq/deepseek-r1-distill-llama-70b profile=-
+16:03:00+05:30 [diagnostic] lane task error: lane=main durationMs=7667 error="FailoverError: LLM request failed: provider rejected the request schema or tool payload."
+16:03:00+05:30 [diagnostic] lane task error: lane=session:agent:main:main durationMs=7679 error="FailoverError: LLM request failed: provider rejected the request schema or tool payload."
+16:03:00+05:30 [model-fallback] model fallback decision: decision=candidate_failed requested=openrouter/deepseek/deepseek-chat candidate=groq/deepseek-r1-distill-llama-70b reason=format next=openrouter/deepseek/deepseek-reasoner detail=LLM request failed: provider rejected the request schema or tool payload.
+16:03:06+05:30 [agent] embedded run agent end: runId=23658613-7339-4266-8f92-bbe3b381e90c isError=true model=deepseek/deepseek-reasoner provider=openrouter error=400 deepseek/deepseek-reasoner is not a valid model ID rawError=400 deepseek/deepseek-reasoner is not a valid model ID
+16:03:06+05:30 [agent] embedded run failover decision: runId=23658613-7339-4266-8f92-bbe3b381e90c stage=assistant decision=fallback_model reason=model_not_found provider=openrouter/deepseek/deepseek-reasoner profile=-
+16:03:06+05:30 [diagnostic] lane task error: lane=main durationMs=6125 error="FailoverError: 400 deepseek/deepseek-reasoner is not a valid model ID"
+16:03:06+05:30 [diagnostic] lane task error: lane=session:agent:main:main durationMs=6139 error="FailoverError: 400 deepseek/deepseek-reasoner is not a valid model ID"
+16:03:06+05:30 [model-fallback] model fallback decision: decision=candidate_failed requested=openrouter/deepseek/deepseek-chat candidate=openrouter/deepseek/deepseek-reasoner reason=model_not_found next=none detail=400 deepseek/deepseek-reasoner is not a valid model ID
+16:03:06+05:30 Embedded agent failed before reply: All models failed (4): openrouter/deepseek/deepseek-chat: ⚠️ openrouter (deepseek/deepseek-chat) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key. (billing) | deepseek/deepseek-chat: Unknown model: deepseek/deepseek-chat (model_not_found) | groq/deepseek-r1-distill-llama-70b: LLM request failed: provider rejected the request schema or tool payload. (format) | openrouter/deepseek/deepseek-reasoner: 400 deepseek/deepseek-reasoner is not a valid model ID (model_not_found) | 400 deepseek/deepseek-reasoner is not a valid model ID
