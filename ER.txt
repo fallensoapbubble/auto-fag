@@ -32,11 +32,19 @@ OpenClaw 2026.4.11 (2681bbd)
 > openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
 > node scripts/run-node.mjs "gateway" "status"
 
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
 $ ls
 ER.txt  job-auto-apply/  openclaw/  README.md  run.sh*
 
 Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
-$ cd openclaw/
+$ cd job-auto-apply/
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/job-auto-apply (main)
+$ ls
+companies.yaml  config.yaml  logs/  README.md  resumes/  screenshots/  skills/
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/job-auto-apply (main)
+$ cd ../openclaw/
 
 Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
 $ ls
