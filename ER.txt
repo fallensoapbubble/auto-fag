@@ -1,21 +1,26 @@
-cd ~/Downloads/project/APPLY/openclaw
 
-# 1. Set gateway mode
-pnpm openclaw config set gateway.mode local
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ cd openclaw/
 
-# 2. (Optional) Silence memory warning
-pnpm openclaw config set agents.defaults.memorySearch.enabled false
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ pnpm openclaw dashboard --no-open
 
-# 3. Start gateway
-pnpm openclaw gateway run
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "dashboard" "--no-open"
 
-# 4. (Wait ~5 seconds, then in a NEW Git Bash tab)
-pnpm openclaw gateway status
 
-# 5. Get the tokenized dashboard URL
-pnpm openclaw dashboard --no-open
+🦞 OpenClaw 2026.4.11 (2681bbd) — If you're lost, run doctor; if you're brave, run prod; if you're wise, run tests.
 
-# 6. Copy the full URL into your browser
+Dashboard URL: http://127.0.0.1:18789/#token=2109c107e90950c7a452bdd71731dd8c2fa9786bc7c83ecc
+Copied to clipboard.
+Browser launch disabled (--no-open). Use the URL above.
 
-# 7. Add the cron job
-pnpm openclaw cron add --name "daily-job-apply" --cron "0 9 * * 1-5" --timeout-seconds 3600 --message "Execute job auto-apply per standing orders. Activate the job_auto_apply skill. Process all 13 target companies. Log results and report summary."
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ pnpm openclaw list skills
+
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "list" "skills"
+
+Terminate batch job (Y/N)? 
+^CThe system cannot open the device or file specified.
+
