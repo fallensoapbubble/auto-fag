@@ -1,0 +1,32 @@
+[build-all] canvas:a2ui:bundle
+
+> openclaw@2026.4.11 canvas:a2ui:bundle C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/bundle-a2ui.mjs
+
+<DIR>/a2ui.bundle.js  chunk │ size: 486.00 kB                                                
+                                                                                             
+✔ rolldown v1.0.0-rc.15 Finished in 144.91 ms                                               
+[build-all] tsdown
+[tsdown] Node.js v22.14.0 is deprecated. Support will be removed in the next minor release. Please upgrade to Node.js 22.18.0 or later.
+[build-all] runtime-postbuild
+[build-all] build-stamp
+[build-all] build:plugin-sdk:dts
+
+> openclaw@2026.4.11 build:plugin-sdk:dts C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> tsc -p tsconfig.plugin-sdk.dts.json
+
+[build-all] write-plugin-sdk-entry-dts
+[build-all] check-plugin-sdk-exports
+OK: All 4 required plugin-sdk exports verified.
+[build-all] canvas-a2ui-copy
+[build-all] copy-hook-metadata
+[copy-hook-metadata] Copied 4 hook metadata files.
+[build-all] copy-export-html-templates
+[copy-export-html-templates] Copied 5 export-html assets.
+[build-all] write-build-info
+[build-all] write-cli-startup-metadata
+[build-all] write-cli-compat
+[INFO]  Linking OpenClaw globally...
+ ERR_PNPM_NO_GLOBAL_BIN_DIR  Unable to find the global bin directory
+
+Run "pnpm setup" to create it automatically, or set the global-bin-dir setting, or the PNPM_HOME env variable. The global bin directory should be in the PATH.
