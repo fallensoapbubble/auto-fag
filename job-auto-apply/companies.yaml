@@ -1,0 +1,27 @@
+companies:
+  - name: Adobe
+    careers_url: "https://careers.adobe.com/us/en"
+  - name: Apple
+    careers_url: "https://jobs.apple.com"
+  - name: McKinsey
+    careers_url: "https://www.mckinsey.com/careers/search-jobs"
+  - name: Google
+    careers_url: "https://www.google.com/about/careers/applications/jobs/results"
+  - name: Meta
+    careers_url: "https://www.metacareers.com/jobs"
+  - name: Intuit
+    careers_url: "https://jobs.intuit.com"
+  - name: JP Morgan
+    careers_url: "https://careers.jpmorgan.com/global/en/jobs"
+  - name: LinkedIn
+    careers_url: "https://careers.linkedin.com"
+  - name: Morgan Stanley
+    careers_url: "https://ms.taleo.net/careersection/2/jobsearch.ftl"
+  - name: Microsoft
+    careers_url: "https://careers.microsoft.com/global/en/search"
+  - name: Netflix
+    careers_url: "https://jobs.netflix.com"
+  - name: Anthropic
+    careers_url: "https://www.anthropic.com/careers"
+  - name: Atlassian
+    careers_url: "https://www.atlassian.com/company/careers/all-jobs"

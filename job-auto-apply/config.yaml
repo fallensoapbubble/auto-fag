@@ -1,0 +1,74 @@
+# ============================================================================
+#  JOB AUTO-APPLY — Candidate Configuration
+#  Fill ALL fields.  The agent reads this for every application.
+# ============================================================================
+
+candidate:
+  full_name: ""
+  email: ""
+  phone: ""
+  linkedin_url: ""
+  portfolio_url: ""
+  github_url: ""
+  location: ""
+  willing_to_relocate: true
+  work_authorization: ""
+  requires_sponsorship: false
+  years_of_experience: 0
+
+resume:
+  default_path: "resumes/default_resume.pdf"
+  sde_path: "resumes/sde_resume.pdf"
+  ai_ml_path: "resumes/ai_ml_resume.pdf"
+  data_path: "resumes/data_resume.pdf"
+
+education:
+  - degree: ""
+    field: ""
+    university: ""
+    graduation_year: ""
+    gpa: ""
+
+experience:
+  - title: ""
+    company: ""
+    duration: ""
+    description: ""
+
+skills:
+  languages: []
+  frameworks: []
+  tools: []
+  domains: []
+
+job_preferences:
+  target_titles:
+    - "Software Engineer"
+    - "Software Development Engineer"
+    - "SDE"
+    - "Data Engineer"
+    - "Data Scientist"
+    - "ML Engineer"
+    - "Machine Learning Engineer"
+    - "AI Engineer"
+    - "Data Analyst"
+  experience_level: "entry-level,1-2 years"
+  job_type: "full-time"
+  preferred_locations: []
+  remote_ok: true
+  salary_minimum: 0
+
+screening_answers:
+  why_interested_template: ""
+  strengths: ""
+  cover_letter_base: ""
+  additional_qa:
+    - question_pattern: ""
+      answer: ""
+
+# ── Control ──
+auto_mode: false
+dry_run: false
+max_per_company: 10
+delay_min_seconds: 30
+delay_max_seconds: 60
