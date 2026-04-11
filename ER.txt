@@ -1,3 +1,40 @@
-cd /c/Users/Annanya/Downloads/project/APPLY/openclaw
-pnpm openclaw --version
-pnpm openclaw onboard --install-daemon
+OPENROUTER_API_KEY=
+GROQ_API_KEY=
+DEEPSEEK_API_KEY=
+OPENROUTER_API_KEY_2=
+my env looks like this
+
+
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ ls
+ER.txt  openclaw/  README.md  run.sh
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ cd openclaw/
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ ls
+AGENTS.md                    extensions/           README.md
+appcast.xml                  fix2.py               render.yaml
+apps/                        fly.private.toml      scripts/
+assets/                      fly.toml              SECURITY.md
+CHANGELOG.md                 git-hooks/            setup-podman.sh*
+CLAUDE.md                    INCIDENT_RESPONSE.md  skills/
+CONTRIBUTING.md              knip.config.ts        src/
+dist/                        LICENSE               Swabble/
+dist-runtime/                Makefile              test/
+docker-compose.yml           node_modules/         test-fixtures/
+Dockerfile                   openclaw.mjs*         tsconfig.json
+Dockerfile.sandbox           openclaw.podman.env   tsconfig.oxlint.json
+Dockerfile.sandbox-browser   package.json          tsconfig.plugin-sdk.dts.json
+Dockerfile.sandbox-common    packages/             tsdown.config.ts
+docker-setup.sh*             patches/              ui/
+docs/                        pnpm-lock.yaml        vendor/
+docs.acp.md                  pnpm-workspace.yaml   VISION.md
+dream-diary-preview-v2.html  pyproject.toml        vitest.config.ts
+dream-diary-preview-v3.html  qa/                   zizmor.yml
+
+
+
+openclaw gateway i did not set up skills but yes i put auth model as deepseek 
