@@ -1,50 +1,10 @@
-> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
-> node scripts/run-node.mjs "cron" "remove" "--name" "daily-job-apply"
-
- ELIFECYCLE  Command failed with exit code 1.
-
-> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
-> node scripts/run-node.mjs "cron" "add" "--name" "daily-job-apply" "--cron" "0 9 * * 1-5" "--timeout-seconds" "3600" "--message" "Execute job auto-apply per standing orders. Read config.yaml and companies.yaml from /c/Users/Annanya/Downloads/project/APPLY/job-auto-apply. Activate the job_auto_apply skill. Process all 13 target companies. Log results. Save confirmation screenshots. Report summary when complete."
-
-
-🦞 OpenClaw 2026.4.11 (2681bbd)
-   Gateway online—please keep hands, feet, and appendages inside the shell at all times.
-
- ELIFECYCLE  Command failed with exit code 1.
-[WARN]  Cron job may need manual creation. Run:
-  pnpm --dir /c/Users/Annanya/Downloads/project/APPLY/openclaw openclaw cron add --name daily-job-apply --cron '0 9 * * 1-5' --timeout-seconds 3600 --message 'Run job auto-apply.'
-[INFO]  [Step 14] Writing README.md...
-[ OK ]  README.md written
-
-[INFO]  ==============================================
-[INFO]    Verification
-[INFO]  ==============================================
-
-[INFO]  OpenClaw CLI:
-
-> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
-> node scripts/run-node.mjs "--version"
-
-OpenClaw 2026.4.11 (2681bbd)
-
-[INFO]  Gateway:
-
-> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
-> node scripts/run-node.mjs "gateway" "status"
 
 Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
 $ ls
 ER.txt  job-auto-apply/  openclaw/  README.md  run.sh*
 
 Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
-$ cd job-auto-apply/
-
-Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/job-auto-apply (main)
-$ ls
-companies.yaml  config.yaml  logs/  README.md  resumes/  screenshots/  skills/
-
-Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/job-auto-apply (main)
-$ cd ../openclaw/
+$ cd openclaw/
 
 Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
 $ ls
@@ -67,3 +27,1096 @@ docs/                        pnpm-lock.yaml        vendor/
 docs.acp.md                  pnpm-workspace.yaml   VISION.md
 dream-diary-preview-v2.html  pyproject.toml        vitest.config.ts
 dream-diary-preview-v3.html  qa/                   zizmor.yml
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ git add --all
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ git commit -m"ko"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ git push
+remote: Permission to openclaw/openclaw.git denied to fallensoapbubble.
+fatal: unable to access 'https://github.com/openclaw/openclaw.git/': The requested URL returned error: 403
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ cd ./..
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ git push
+Everything up-to-date
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ git add --all
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'job-auto-apply/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'job-auto-apply/companies.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'job-auto-apply/config.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'job-auto-apply/logs/applications_log.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'job-auto-apply/skills/job-auto-apply/SKILL.md', LF will be replaced by CRLF the next time Git touches it
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ git commit -m"koooo"
+[main 6444a22] koooo
+ 7 files changed, 300 insertions(+), 12 deletions(-)
+ create mode 100644 job-auto-apply/README.md
+ create mode 100644 job-auto-apply/companies.yaml
+ create mode 100644 job-auto-apply/config.yaml
+ create mode 100644 job-auto-apply/logs/applications_log.json
+ create mode 100644 job-auto-apply/skills/job-auto-apply/SKILL.md
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ git add --all
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ git commit -m"koooo"
+[main 2dc0e31] koooo
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ git push
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (16/16), 5.97 KiB | 381.00 KiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.                                                    
+To https://github.com/fallensoapbubble/auto-fag.git
+   0f30cd7..2dc0e31  main -> main
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ cd openclaw/
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ pnpm openclaw skills list
+
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "skills" "list"
+
+
+🦞 OpenClaw 2026.4.11 (2681bbd)
+   I don't sleep, I just enter low-power mode and dream of clean diffs.
+
+Skills (8/53 ready)
+┌───────────────┬──────────────────────────┬─────────────────────────────┬────────────────────┐
+│ Status        │ Skill                    │ Description                 │ Source             │
+├───────────────┼──────────────────────────┼─────────────────────────────┼────────────────────┤
+│ △ needs setup │ 🔐 1password             │ Set up and use 1Password    │ openclaw-bundled   │
+│               │                          │ CLI (op). Use when          │                    │
+│               │                          │ installing the CLI,         │                    │
+│               │                          │ enabling desktop app        │                    │
+│               │                          │ integration, signing in     │                    │
+│               │                          │ (single or multi-account),  │                    │
+│               │                          │ or reading/injecting/       │                    │
+│               │                          │ running secrets via op.     │                    │
+│ △ needs setup │ 📝 apple-notes           │ Manage Apple Notes via the  │ openclaw-bundled   │
+│               │                          │ `memo` CLI on macOS         │                    │
+│               │                          │ (create, view, edit,        │                    │
+│               │                          │ delete, search, move, and   │                    │
+│               │                          │ export notes). Use when a   │                    │
+│               │                          │ user asks OpenClaw to add   │                    │
+│               │                          │ a note, list notes, search  │                    │
+│               │                          │ notes, or manage note       │                    │
+│               │                          │ folders.                    │                    │
+│ △ needs setup │ ⏰ apple-reminders       │ Manage Apple Reminders via  │ openclaw-bundled   │
+│               │                          │ remindctl CLI (list, add,   │                    │
+│               │                          │ edit, complete, delete).    │                    │
+│               │                          │ Supports lists, date        │                    │
+│               │                          │ filters, and JSON/plain     │                    │
+│               │                          │ output.                     │                    │
+│ △ needs setup │ 🐻 bear-notes            │ Create, search, and manage  │ openclaw-bundled   │
+│               │                          │ Bear notes via grizzly CLI. │                    │
+│ △ needs setup │ 📰 blogwatcher           │ Monitor blogs and RSS/Atom  │ openclaw-bundled   │
+│               │                          │ feeds for updates using     │                    │
+│               │                          │ the blogwatcher CLI.        │                    │
+│ △ needs setup │ 🫐 blucli                │ BluOS CLI (blu) for         │ openclaw-bundled   │
+│               │                          │ discovery, playback,        │                    │
+│               │                          │ grouping, and volume.       │                    │
+│ △ needs setup │ 🫧 bluebubbles           │ Use when you need to send   │ openclaw-bundled   │
+│               │                          │ or manage iMessages via     │                    │
+│               │                          │ BlueBubbles (recommended    │                    │
+│               │                          │ iMessage integration).      │                    │
+│               │                          │ Calls go through the        │                    │
+│               │                          │ generic message tool with   │                    │
+│               │                          │ channel="bluebubbles".      │                    │
+│ △ needs setup │ 📸 camsnap               │ Capture frames or clips     │ openclaw-bundled   │
+│               │                          │ from RTSP/ONVIF cameras.    │                    │
+│ △ needs setup │ 📦 clawhub               │ Use the ClawHub CLI to      │ openclaw-bundled   │
+│               │                          │ search, install, update,    │                    │
+│               │                          │ and publish agent skills    │                    │
+│               │                          │ from clawhub.com. Use when  │                    │
+│               │                          │ you need to fetch new       │                    │
+│               │                          │ skills on the fly, sync     │                    │
+│               │                          │ installed skills to latest  │                    │
+│               │                          │ or a specific version, or   │                    │
+│               │                          │ publish new/updated skill   │                    │
+│               │                          │ folders with the npm-       │                    │
+│               │                          │ installed clawhub CLI.      │                    │
+│ ✓ ready       │ 🧩 coding-agent          │ Delegate coding tasks to    │ openclaw-bundled   │
+│               │                          │ Codex, Claude Code, or Pi   │                    │
+│               │                          │ agents via background       │                    │
+│               │                          │ process. Use when: (1)      │                    │
+│               │                          │ building/creating new       │                    │
+│               │                          │ features or apps, (2)       │                    │
+│               │                          │ reviewing PRs (spawn in     │                    │
+│               │                          │ temp dir), (3) refactoring  │                    │
+│               │                          │ large codebases, (4)        │                    │
+│               │                          │ iterative coding that       │                    │
+│               │                          │ needs file exploration.     │                    │
+│               │                          │ NOT for: simple one-liner   │                    │
+│               │                          │ fixes (just edit), reading  │                    │
+│               │                          │ code (use read tool),       │                    │
+│               │                          │ thread-bound ACP harness    │                    │
+│               │                          │ requests in chat (for       │                    │
+│               │                          │ example spawn/run Codex or  │                    │
+│               │                          │ Claude Code in a Discord    │                    │
+│               │                          │ thread; use sessions_spawn  │                    │
+│               │                          │ with runtime:"acp"), or     │                    │
+│               │                          │ any work in ~/clawd         │                    │
+│               │                          │ workspace (never spawn      │                    │
+│               │                          │ agents here). Claude Code:  │                    │
+│               │                          │ use --print --permission-   │                    │
+│               │                          │ mode bypassPermissions (no  │                    │
+│               │                          │ PTY). Codex/Pi/OpenCode:    │                    │
+│               │                          │ pty:true required.          │                    │
+│ △ needs setup │ 🎮 discord               │ Discord ops via the         │ openclaw-bundled   │
+│               │                          │ message tool                │                    │
+│               │                          │ (channel=discord).          │                    │
+│ △ needs setup │ 🛌 eightctl              │ Control Eight Sleep pods    │ openclaw-bundled   │
+│               │                          │ (status, temperature,       │                    │
+│               │                          │ alarms, schedules).         │                    │
+│ △ needs setup │ ✨ gemini                │ Gemini CLI for one-shot     │ openclaw-bundled   │
+│               │                          │ Q&A, summaries, and         │                    │
+│               │                          │ generation.                 │                    │
+│ △ needs setup │ 📦 gh-issues             │ Fetch GitHub issues, spawn  │ openclaw-bundled   │
+│               │                          │ sub-agents to implement     │                    │
+│               │                          │ fixes and open PRs, then    │                    │
+│               │                          │ monitor and address PR      │                    │
+│               │                          │ review comments. Usage: /   │                    │
+│               │                          │ gh-issues [owner/repo] [--  │                    │
+│               │                          │ label bug] [--limit 5] [--  │                    │
+│               │                          │ milestone v1.0] [--         │                    │
+│               │                          │ assignee @me] [--fork user/ │                    │
+│               │                          │ repo] [--watch] [--         │                    │
+│               │                          │ interval 5] [--reviews-     │                    │
+│               │                          │ only] [--cron] [--dry-run]  │                    │
+│               │                          │ [--model glm-5] [--notify-  │                    │
+│               │                          │ channel -1002381931352]     │                    │
+│ △ needs setup │ 🧲 gifgrep               │ Search GIF providers with   │ openclaw-bundled   │
+│               │                          │ CLI/TUI, download results,  │                    │
+│               │                          │ and extract stills/sheets.  │                    │
+│ △ needs setup │ 🐙 github                │ GitHub operations via `gh`  │ openclaw-bundled   │
+│               │                          │ CLI: issues, PRs, CI runs,  │                    │
+│               │                          │ code review, API queries.   │                    │
+│               │                          │ Use when: (1) checking PR   │                    │
+│               │                          │ status or CI, (2) creating/ │                    │
+│               │                          │ commenting on issues, (3)   │                    │
+│               │                          │ listing/filtering PRs or    │                    │
+│               │                          │ issues, (4) viewing run     │                    │
+│               │                          │ logs. NOT for: complex web  │                    │
+│               │                          │ UI interactions requiring   │                    │
+│               │                          │ manual browser flows (use   │                    │
+│               │                          │ browser tooling when        │                    │
+│               │                          │ available), bulk            │                    │
+│               │                          │ operations across many      │                    │
+│               │                          │ repos (script with gh       │                    │
+│               │                          │ api), or when gh auth is    │                    │
+│               │                          │ not configured.             │                    │
+│ △ needs setup │ 🎮 gog                   │ Google Workspace CLI for    │ openclaw-bundled   │
+│               │                          │ Gmail, Calendar, Drive,     │                    │
+│               │                          │ Contacts, Sheets, and Docs. │                    │
+│ △ needs setup │ 📍 goplaces              │ Query Google Places API     │ openclaw-bundled   │
+│               │                          │ (New) via the goplaces CLI  │                    │
+│               │                          │ for text search, place      │                    │
+│               │                          │ details, resolve, and       │                    │
+│               │                          │ reviews. Use for human-     │                    │
+│               │                          │ friendly place lookup or    │                    │
+│               │                          │ JSON output for scripts.    │                    │
+│ ✓ ready       │ 📦 healthcheck           │ Host security hardening     │ openclaw-bundled   │
+│               │                          │ and risk-tolerance          │                    │
+│               │                          │ configuration for OpenClaw  │                    │
+│               │                          │ deployments. Use when a     │                    │
+│               │                          │ user asks for security      │                    │
+│               │                          │ audits, firewall/SSH/       │                    │
+│               │                          │ update hardening, risk      │                    │
+│               │                          │ posture, exposure review,   │                    │
+│               │                          │ OpenClaw cron scheduling    │                    │
+│               │                          │ for periodic checks, or     │                    │
+│               │                          │ version status checks on a  │                    │
+│               │                          │ machine running OpenClaw    │                    │
+│               │                          │ (laptop, workstation, Pi,   │                    │
+│               │                          │ VPS).                       │                    │
+│ △ needs setup │ 📧 himalaya              │ CLI to manage emails via    │ openclaw-bundled   │
+│               │                          │ IMAP/SMTP. Use `himalaya`   │                    │
+│               │                          │ to list, read, write,       │                    │
+│               │                          │ reply, forward, search,     │                    │
+│               │                          │ and organize emails from    │                    │
+│               │                          │ the terminal. Supports      │                    │
+│               │                          │ multiple accounts and       │                    │
+│               │                          │ message composition with    │                    │
+│               │                          │ MML (MIME Meta Language).   │                    │
+│ △ needs setup │ 📨 imsg                  │ iMessage/SMS CLI for        │ openclaw-bundled   │
+│               │                          │ listing chats, history,     │                    │
+│               │                          │ and sending messages via    │                    │
+│               │                          │ Messages.app.               │                    │
+│ △ needs setup │ 📦 mcporter              │ Use the mcporter CLI to     │ openclaw-bundled   │
+│               │                          │ list, configure, auth, and  │                    │
+│               │                          │ call MCP servers/tools      │                    │
+│               │                          │ directly (HTTP or stdio),   │                    │
+│               │                          │ including ad-hoc servers,   │                    │
+│               │                          │ config edits, and CLI/type  │                    │
+│               │                          │ generation.                 │                    │
+│ △ needs setup │ 📊 model-usage           │ Use CodexBar CLI local      │ openclaw-bundled   │
+│               │                          │ cost usage to summarize     │                    │
+│               │                          │ per-model usage for Codex   │                    │
+│               │                          │ or Claude, including the    │                    │
+│               │                          │ current (most recent)       │                    │
+│               │                          │ model or a full model       │                    │
+│               │                          │ breakdown. Trigger when     │                    │
+│               │                          │ asked for model-level       │                    │
+│               │                          │ usage/cost data from        │                    │
+│               │                          │ codexbar, or when you need  │                    │
+│               │                          │ a scriptable per-model      │                    │
+│               │                          │ summary from codexbar cost  │                    │
+│               │                          │ JSON.                       │                    │
+│ △ needs setup │ 📄 nano-pdf              │ Edit PDFs with natural-     │ openclaw-bundled   │
+│               │                          │ language instructions       │                    │
+│               │                          │ using the nano-pdf CLI.     │                    │
+│ ✓ ready       │ 📦 node-connect          │ Diagnose OpenClaw node      │ openclaw-bundled   │
+│               │                          │ connection and pairing      │                    │
+│               │                          │ failures for Android, iOS,  │                    │
+│               │                          │ and macOS companion apps.   │                    │
+│               │                          │ Use when QR/setup code/     │                    │
+│               │                          │ manual connect fails,       │                    │
+│               │                          │ local Wi-Fi works but VPS/  │                    │
+│               │                          │ tailnet does not, or        │                    │
+│               │                          │ errors mention pairing      │                    │
+│               │                          │ required, unauthorized,     │                    │
+│               │                          │ bootstrap token invalid or  │                    │
+│               │                          │ expired, gateway.bind,      │                    │
+│               │                          │ gateway.remote.url,         │                    │
+│               │                          │ Tailscale, or plugins.      │                    │
+│               │                          │ entries.device-pair.config. │                    │
+│               │                          │ publicUrl.                  │                    │
+│ △ needs setup │ 📝 notion                │ Notion API for creating     │ openclaw-bundled   │
+│               │                          │ and managing pages,         │                    │
+│               │                          │ databases, and blocks.      │                    │
+│ △ needs setup │ 💎 obsidian              │ Work with Obsidian vaults   │ openclaw-bundled   │
+│               │                          │ (plain Markdown notes) and  │                    │
+│               │                          │ automate via obsidian-cli.  │                    │
+│ △ needs setup │ 🎤 openai-whisper        │ Local speech-to-text with   │ openclaw-bundled   │
+│               │                          │ the Whisper CLI (no API     │                    │
+│               │                          │ key).                       │                    │
+│ △ needs setup │ 🌐 openai-whisper-api    │ Transcribe audio via        │ openclaw-bundled   │
+│               │                          │ OpenAI Audio                │                    │
+│               │                          │ Transcriptions API          │                    │
+│               │                          │ (Whisper).                  │                    │
+│ △ needs setup │ 💡 openhue               │ Control Philips Hue lights  │ openclaw-bundled   │
+│               │                          │ and scenes via the OpenHue  │                    │
+│               │                          │ CLI.                        │                    │
+│ △ needs setup │ 🧿 oracle                │ Best practices for using    │ openclaw-bundled   │
+│               │                          │ the oracle CLI (prompt +    │                    │
+│               │                          │ file bundling, engines,     │                    │
+│               │                          │ sessions, and file          │                    │
+│               │                          │ attachment patterns).       │                    │
+│ △ needs setup │ 🛵 ordercli              │ Foodora-only CLI for        │ openclaw-bundled   │
+│               │                          │ checking past orders and    │                    │
+│               │                          │ active order status         │                    │
+│               │                          │ (Deliveroo WIP).            │                    │
+│ △ needs setup │ 👀 peekaboo              │ Capture and automate macOS  │ openclaw-bundled   │
+│               │                          │ UI with the Peekaboo CLI.   │                    │
+│ △ needs setup │ 🔊 sag                   │ ElevenLabs text-to-speech   │ openclaw-bundled   │
+│               │                          │ with mac-style say UX.      │                    │
+│ △ needs setup │ 📜 session-logs          │ Search and analyze your     │ openclaw-bundled   │
+│               │                          │ own session logs (older/    │                    │
+│               │                          │ parent conversations)       │                    │
+│               │                          │ using jq.                   │                    │
+│ △ needs setup │ 🔉 sherpa-onnx-tts       │ Local text-to-speech via    │ openclaw-bundled   │
+│               │                          │ sherpa-onnx (offline, no    │                    │
+│               │                          │ cloud)                      │                    │
+│ ✓ ready       │ 📦 skill-creator         │ Create, edit, improve, or   │ openclaw-bundled   │
+│               │                          │ audit AgentSkills. Use      │                    │
+│               │                          │ when creating a new skill   │                    │
+│               │                          │ from scratch or when asked  │                    │
+│               │                          │ to improve, review, audit,  │                    │
+│               │                          │ tidy up, or clean up an     │                    │
+│               │                          │ existing skill or SKILL.md  │                    │
+│               │                          │ file. Also use when         │                    │
+│               │                          │ editing or restructuring a  │                    │
+│               │                          │ skill directory (moving     │                    │
+│               │                          │ files to references/ or     │                    │
+│               │                          │ scripts/, removing stale    │                    │
+│               │                          │ content, validating         │                    │
+│               │                          │ against the AgentSkills     │                    │
+│               │                          │ spec). Triggers on phrases  │                    │
+│               │                          │ like "create a skill",      │                    │
+│               │                          │ "author a skill", "tidy up  │                    │
+│               │                          │ a skill", "improve this     │                    │
+│               │                          │ skill", "review the         │                    │
+│               │                          │ skill", "clean up the       │                    │
+│               │                          │ skill", "audit the skill".  │                    │
+│ △ needs setup │ 💬 slack                 │ Use when you need to        │ openclaw-bundled   │
+│               │                          │ control Slack from          │                    │
+│               │                          │ OpenClaw via the slack      │                    │
+│               │                          │ tool, including reacting    │                    │
+│               │                          │ to messages or pinning/     │                    │
+│               │                          │ unpinning items in Slack    │                    │
+│               │                          │ channels or DMs.            │                    │
+│ △ needs setup │ 🌊 songsee               │ Generate spectrograms and   │ openclaw-bundled   │
+│               │                          │ feature-panel               │                    │
+│               │                          │ visualizations from audio   │                    │
+│               │                          │ with the songsee CLI.       │                    │
+│ △ needs setup │ 🔊 sonoscli              │ Control Sonos speakers      │ openclaw-bundled   │
+│               │                          │ (discover/status/play/      │                    │
+│               │                          │ volume/group).              │                    │
+│ △ needs setup │ 🎵 spotify-player        │ Terminal Spotify playback/  │ openclaw-bundled   │
+│               │                          │ search via spogo            │                    │
+│               │                          │ (preferred) or spotify_     │                    │
+│               │                          │ player.                     │                    │
+│ △ needs setup │ 🧾 summarize             │ Summarize or extract text/  │ openclaw-bundled   │
+│               │                          │ transcripts from URLs,      │                    │
+│               │                          │ podcasts, and local files   │                    │
+│               │                          │ (great fallback for         │                    │
+│               │                          │ “transcribe this YouTube/   │                    │
+│               │                          │ video”).                    │                    │
+│ ✓ ready       │ 🪝 taskflow              │ Use when work should span   │ openclaw-bundled   │
+│               │                          │ one or more detached tasks  │                    │
+│               │                          │ but still behave like one   │                    │
+│               │                          │ job with a single owner     │                    │
+│               │                          │ context. TaskFlow is the    │                    │
+│               │                          │ durable flow substrate      │                    │
+│               │                          │ under authoring layers      │                    │
+│               │                          │ like Lobster, ACPX,         │                    │
+│               │                          │ plugins, or plain code.     │                    │
+│               │                          │ Keep conditional logic in   │                    │
+│               │                          │ the caller; use TaskFlow    │                    │
+│               │                          │ for flow identity, child-   │                    │
+│               │                          │ task linkage, waiting       │                    │
+│               │                          │ state, revision-checked     │                    │
+│               │                          │ mutations, and user-facing  │                    │
+│               │                          │ emergence.                  │                    │
+│ ✓ ready       │ 📥 taskflow-inbox-triage │ Example TaskFlow authoring  │ openclaw-bundled   │
+│               │                          │ pattern for inbox triage.   │                    │
+│               │                          │ Use when messages need      │                    │
+│               │                          │ different treatment based   │                    │
+│               │                          │ on intent, with some        │                    │
+│               │                          │ routes notifying            │                    │
+│               │                          │ immediately, some waiting   │                    │
+│               │                          │ on outside answers, and     │                    │
+│               │                          │ others rolling into a       │                    │
+│               │                          │ later summary.              │                    │
+│ △ needs setup │ ✅ things-mac            │ Manage Things 3 via the     │ openclaw-bundled   │
+│               │                          │ `things` CLI on macOS (add/ │                    │
+│               │                          │ update projects+todos via   │                    │
+│               │                          │ URL scheme; read/search/    │                    │
+│               │                          │ list from the local Things  │                    │
+│               │                          │ database). Use when a user  │                    │
+│               │                          │ asks OpenClaw to add a      │                    │
+│               │                          │ task to Things, list inbox/ │                    │
+│               │                          │ today/upcoming, search      │                    │
+│               │                          │ tasks, or inspect projects/ │                    │
+│               │                          │ areas/tags.                 │                    │
+│ △ needs setup │ 🧵 tmux                  │ Remote-control tmux         │ openclaw-bundled   │
+│               │                          │ sessions for interactive    │                    │
+│               │                          │ CLIs by sending keystrokes  │                    │
+│               │                          │ and scraping pane output.   │                    │
+│ △ needs setup │ 📋 trello                │ Manage Trello boards,       │ openclaw-bundled   │
+│               │                          │ lists, and cards via the    │                    │
+│               │                          │ Trello REST API.            │                    │
+│ △ needs setup │ 🎬 video-frames          │ Extract frames or short     │ openclaw-bundled   │
+│               │                          │ clips from videos using     │                    │
+│               │                          │ ffmpeg.                     │                    │
+│ △ needs setup │ 📞 voice-call            │ Start voice calls via the   │ openclaw-bundled   │
+│               │                          │ OpenClaw voice-call plugin. │                    │
+│ △ needs setup │ 📱 wacli                 │ Send WhatsApp messages to   │ openclaw-bundled   │
+│               │                          │ other people or search/     │                    │
+│               │                          │ sync WhatsApp history via   │                    │
+│               │                          │ the wacli CLI (not for      │                    │
+│               │                          │ normal user chats).         │                    │
+│ ✓ ready       │ ☔ weather               │ Get current weather and     │ openclaw-bundled   │
+│               │                          │ forecasts via wttr.in or    │                    │
+│               │                          │ Open-Meteo. Use when: user  │                    │
+│               │                          │ asks about weather,         │                    │
+│               │                          │ temperature, or forecasts   │                    │
+│               │                          │ for any location. NOT for:  │                    │
+│               │                          │ historical weather data,    │                    │
+│               │                          │ severe weather alerts, or   │                    │
+│               │                          │ detailed meteorological     │                    │
+│               │                          │ analysis. No API key        │                    │
+│               │                          │ needed.                     │                    │
+│ △ needs setup │ 🐦 xurl                  │ A CLI tool for making       │ openclaw-bundled   │
+│               │                          │ authenticated requests to   │                    │
+│               │                          │ the X (Twitter) API. Use    │                    │
+│               │                          │ this skill when you need    │                    │
+│               │                          │ to post tweets, reply,      │                    │
+│               │                          │ quote, search, read posts,  │                    │
+│               │                          │ manage followers, send      │                    │
+│               │                          │ DMs, upload media, or       │                    │
+│               │                          │ interact with any X API v2  │                    │
+│               │                          │ endpoint.                   │                    │
+│ ✓ ready       │ 📦 job_auto_apply        │ Autonomous job-application  │ openclaw-workspace │
+│               │                          │ agent. Searches target      │                    │
+│               │                          │ company career pages,       │                    │
+│               │                          │ finds matching roles, and   │                    │
+│               │                          │ applies using the browser   │                    │
+│               │                          │ tool + candidate profile    │                    │
+│               │                          │ from config.yaml. All page  │                    │
+│               │                          │ interaction is adaptive     │                    │
+│               │                          │ via LLM reasoning — no      │                    │
+│               │                          │ hardcoded selectors.        │                    │
+└───────────────┴──────────────────────────┴─────────────────────────────┴────────────────────┘
+
+Tip: use `openclaw skills search`, `openclaw skills install`, and `openclaw skills update` for ClawHub-backed skills.
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ pnpm openclaw doctor
+
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "doctor"
+│               │                          │ expired, gateway.bind,      │                    │
+│               │                          │ gateway.remote.url,         │                    │
+│               │                          │ Tailscale, or plugins.      │                    │
+│               │                          │ entries.device-pair.config. │                    │
+│               │                          │ publicUrl.                  │                    │
+│ △ needs setup │ 📝 notion                │ Notion API for creating     │ openclaw-bundled   │
+│               │                          │ and managing pages,         │                    │
+│               │                          │ databases, and blocks.      │                    │
+│ △ needs setup │ 💎 obsidian              │ Work with Obsidian vaults   │ openclaw-bundled   │
+│               │                          │ (plain Markdown notes) and  │                    │
+│               │                          │ automate via obsidian-cli.  │                    │
+│ △ needs setup │ 🎤 openai-whisper        │ Local speech-to-text with   │ openclaw-bundled   │
+│               │                          │ the Whisper CLI (no API     │                    │
+│               │                          │ key).                       │                    │
+│ △ needs setup │ 🌐 openai-whisper-api    │ Transcribe audio via        │ openclaw-bundled   │
+│               │                          │ OpenAI Audio                │                    │
+│               │                          │ Transcriptions API          │                    │
+│               │                          │ (Whisper).                  │                    │
+│ △ needs setup │ 💡 openhue               │ Control Philips Hue lights  │ openclaw-bundled   │
+│               │                          │ and scenes via the OpenHue  │                    │
+│               │                          │ CLI.                        │                    │
+│ △ needs setup │ 🧿 oracle                │ Best practices for using    │ openclaw-bundled   │
+│               │                          │ the oracle CLI (prompt +    │                    │
+│               │                          │ file bundling, engines,     │                    │
+│               │                          │ sessions, and file          │                    │
+│               │                          │ attachment patterns).       │                    │
+│ △ needs setup │ 🛵 ordercli              │ Foodora-only CLI for        │ openclaw-bundled   │
+│               │                          │ checking past orders and    │                    │
+│               │                          │ active order status         │                    │
+│               │                          │ (Deliveroo WIP).            │                    │
+│ △ needs setup │ 👀 peekaboo              │ Capture and automate macOS  │ openclaw-bundled   │
+│               │                          │ UI with the Peekaboo CLI.   │                    │
+│ △ needs setup │ 🔊 sag                   │ ElevenLabs text-to-speech   │ openclaw-bundled   │
+│               │                          │ with mac-style say UX.      │                    │
+│ △ needs setup │ 📜 session-logs          │ Search and analyze your     │ openclaw-bundled   │
+│               │                          │ own session logs (older/    │                    │
+│               │                          │ parent conversations)       │                    │
+│               │                          │ using jq.                   │                    │
+│ △ needs setup │ 🔉 sherpa-onnx-tts       │ Local text-to-speech via    │ openclaw-bundled   │
+│               │                          │ sherpa-onnx (offline, no    │                    │
+│               │                          │ cloud)                      │                    │
+│ ✓ ready       │ 📦 skill-creator         │ Create, edit, improve, or   │ openclaw-bundled   │
+│               │                          │ audit AgentSkills. Use      │                    │
+│               │                          │ when creating a new skill   │                    │
+│               │                          │ from scratch or when asked  │                    │
+│               │                          │ to improve, review, audit,  │                    │
+│               │                          │ tidy up, or clean up an     │                    │
+│               │                          │ existing skill or SKILL.md  │                    │
+│               │                          │ file. Also use when         │                    │
+│               │                          │ editing or restructuring a  │                    │
+│               │                          │ skill directory (moving     │                    │
+│               │                          │ files to references/ or     │                    │
+│               │                          │ scripts/, removing stale    │                    │
+│               │                          │ content, validating         │                    │
+│               │                          │ against the AgentSkills     │                    │
+│               │                          │ spec). Triggers on phrases  │                    │
+│               │                          │ like "create a skill",      │                    │
+│               │                          │ "author a skill", "tidy up  │                    │
+│               │                          │ a skill", "improve this     │                    │
+│               │                          │ skill", "review the         │                    │
+│               │                          │ skill", "clean up the       │                    │
+│               │                          │ skill", "audit the skill".  │                    │
+│ △ needs setup │ 💬 slack                 │ Use when you need to        │ openclaw-bundled   │
+│               │                          │ control Slack from          │                    │
+│               │                          │ OpenClaw via the slack      │                    │
+│               │                          │ tool, including reacting    │                    │
+│               │                          │ to messages or pinning/     │                    │
+│               │                          │ unpinning items in Slack    │                    │
+│               │                          │ channels or DMs.            │                    │
+│ △ needs setup │ 🌊 songsee               │ Generate spectrograms and   │ openclaw-bundled   │
+│               │                          │ feature-panel               │                    │
+│               │                          │ visualizations from audio   │                    │
+│               │                          │ with the songsee CLI.       │                    │
+│ △ needs setup │ 🔊 sonoscli              │ Control Sonos speakers      │ openclaw-bundled   │
+│               │                          │ (discover/status/play/      │                    │
+│               │                          │ volume/group).              │                    │
+│ △ needs setup │ 🎵 spotify-player        │ Terminal Spotify playback/  │ openclaw-bundled   │
+│               │                          │ search via spogo            │                    │
+│               │                          │ (preferred) or spotify_     │                    │
+│               │                          │ player.                     │                    │
+│ △ needs setup │ 🧾 summarize             │ Summarize or extract text/  │ openclaw-bundled   │
+│               │                          │ transcripts from URLs,      │                    │
+│               │                          │ podcasts, and local files   │                    │
+│               │                          │ (great fallback for         │                    │
+│               │                          │ “transcribe this YouTube/   │                    │
+│               │                          │ video”).                    │                    │
+│ ✓ ready       │ 🪝 taskflow              │ Use when work should span   │ openclaw-bundled   │
+│               │                          │ one or more detached tasks  │                    │
+│               │                          │ but still behave like one   │                    │
+│               │                          │ job with a single owner     │                    │
+│               │                          │ context. TaskFlow is the    │                    │
+│               │                          │ durable flow substrate      │                    │
+│               │                          │ under authoring layers      │                    │
+│               │                          │ like Lobster, ACPX,         │                    │
+│               │                          │ plugins, or plain code.     │                    │
+│               │                          │ Keep conditional logic in   │                    │
+│               │                          │ the caller; use TaskFlow    │                    │
+│               │                          │ for flow identity, child-   │                    │
+│               │                          │ task linkage, waiting       │                    │
+│               │                          │ state, revision-checked     │                    │
+│               │                          │ mutations, and user-facing  │                    │
+│               │                          │ emergence.                  │                    │
+│ ✓ ready       │ 📥 taskflow-inbox-triage │ Example TaskFlow authoring  │ openclaw-bundled   │
+│               │                          │ pattern for inbox triage.   │                    │
+│               │                          │ Use when messages need      │                    │
+│               │                          │ different treatment based   │                    │
+│               │                          │ on intent, with some        │                    │
+│               │                          │ routes notifying            │                    │
+│               │                          │ immediately, some waiting   │                    │
+│               │                          │ on outside answers, and     │                    │
+│               │                          │ others rolling into a       │                    │
+│               │                          │ later summary.              │                    │
+│ △ needs setup │ ✅ things-mac            │ Manage Things 3 via the     │ openclaw-bundled   │
+│               │                          │ `things` CLI on macOS (add/ │                    │
+│               │                          │ update projects+todos via   │                    │
+│               │                          │ URL scheme; read/search/    │                    │
+│               │                          │ list from the local Things  │                    │
+│               │                          │ database). Use when a user  │                    │
+│               │                          │ asks OpenClaw to add a      │                    │
+│               │                          │ task to Things, list inbox/ │                    │
+│               │                          │ today/upcoming, search      │                    │
+│               │                          │ tasks, or inspect projects/ │                    │
+│               │                          │ areas/tags.                 │                    │
+│ △ needs setup │ 🧵 tmux                  │ Remote-control tmux         │ openclaw-bundled   │
+│               │                          │ sessions for interactive    │                    │
+│               │                          │ CLIs by sending keystrokes  │                    │
+│               │                          │ and scraping pane output.   │                    │
+│ △ needs setup │ 📋 trello                │ Manage Trello boards,       │ openclaw-bundled   │
+│               │                          │ lists, and cards via the    │                    │
+│               │                          │ Trello REST API.            │                    │
+│ △ needs setup │ 🎬 video-frames          │ Extract frames or short     │ openclaw-bundled   │
+│               │                          │ clips from videos using     │                    │
+│               │                          │ ffmpeg.                     │                    │
+│ △ needs setup │ 📞 voice-call            │ Start voice calls via the   │ openclaw-bundled   │
+│               │                          │ OpenClaw voice-call plugin. │                    │
+│ △ needs setup │ 📱 wacli                 │ Send WhatsApp messages to   │ openclaw-bundled   │
+│               │                          │ other people or search/     │                    │
+│               │                          │ sync WhatsApp history via   │                    │
+│               │                          │ the wacli CLI (not for      │                    │
+│               │                          │ normal user chats).         │                    │
+│ ✓ ready       │ ☔ weather               │ Get current weather and     │ openclaw-bundled   │
+│               │                          │ forecasts via wttr.in or    │                    │
+│               │                          │ Open-Meteo. Use when: user  │                    │
+│               │                          │ asks about weather,         │                    │
+│               │                          │ temperature, or forecasts   │                    │
+│               │                          │ for any location. NOT for:  │                    │
+│               │                          │ historical weather data,    │                    │
+│               │                          │ severe weather alerts, or   │                    │
+│               │                          │ detailed meteorological     │                    │
+│               │                          │ analysis. No API key        │                    │
+│               │                          │ needed.                     │                    │
+│ △ needs setup │ 🐦 xurl                  │ A CLI tool for making       │ openclaw-bundled   │
+│               │                          │ authenticated requests to   │                    │
+│               │                          │ the X (Twitter) API. Use    │                    │
+│               │                          │ this skill when you need    │                    │
+│               │                          │ to post tweets, reply,      │                    │
+│               │                          │ quote, search, read posts,  │                    │
+│               │                          │ manage followers, send      │                    │
+│               │                          │ DMs, upload media, or       │                    │
+│               │                          │ interact with any X API v2  │                    │
+│               │                          │ endpoint.                   │                    │
+│ ✓ ready       │ 📦 job_auto_apply        │ Autonomous job-application  │ openclaw-workspace │
+│               │                          │ agent. Searches target      │                    │
+│               │                          │ company career pages,       │                    │
+│               │                          │ finds matching roles, and   │                    │
+│               │                          │ applies using the browser   │                    │
+│               │                          │ tool + candidate profile    │                    │
+│               │                          │ from config.yaml. All page  │                    │
+│               │                          │ interaction is adaptive     │                    │
+│               │                          │ via LLM reasoning — no      │                    │
+│               │                          │ hardcoded selectors.        │                    │
+└───────────────┴──────────────────────────┴─────────────────────────────┴────────────────────┘
+
+Tip: use `openclaw skills search`, `openclaw skills install`, and `openclaw skills update` for ClawHub-backed skills.
+
+[INFO]  Cron jobs:
+
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "cron" "list"
+
+
+🦞 OpenClaw 2026.4.11 (2681bbd)
+   I've survived more breaking changes than your last three relationships.
+
+ ELIFECYCLE  Command failed with exit code 1.
+[WARN]  Could not list cron
+
+[INFO]  Browser (jobsearch profile):
+
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "browser" "--browser-profile" "jobsearch" "status"
+
+
+🦞 OpenClaw 2026.4.11 (2681bbd)
+   I'm like tmux: confusing at first, then suddenly you can't live without me.
+
+ ELIFECYCLE  Command failed with exit code 1.
+[WARN]  Browser not attached — open Brave Profile 6 + enable remote debugging first
+
+[INFO]  ==============================================
+[INFO]    SETUP COMPLETE
+[INFO]  ==============================================
+
+  Project: /c/Users/Annanya/Downloads/project/APPLY/job-auto-apply
+
+  BEFORE FIRST RUN:
+    1. Edit config.yaml with your real info
+    2. Put resume PDFs in resumes/
+    3. Open Brave → Profile 6 (jobsearch)
+    4. brave://inspect/#remote-debugging → enable it
+    5. Set dry_run: true in config.yaml for testing
+
+  TO RUN:
+    pnpm --dir /c/Users/Annanya/Downloads/project/APPLY/openclaw openclaw dashboard
+    → In chat: "Run job applications"
+
+[INFO]  Launching dashboard...
+[ OK ]  All done!
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY (main)
+$ 
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "dashboard"
+
+
+🦞 OpenClaw 2026.4.11 (2681bbd)
+   Your personal assistant, minus the passive-aggressive calendar reminders.
+
+Dashboard URL: http://127.0.0.1:18789/
+Copied to clipboard.
+Opened in your browser. Keep that tab to control OpenClaw.
+│               │                          │ for text search, place      │                    │
+│               │                          │ details, resolve, and       │                    │
+│               │                          │ reviews. Use for human-     │                    │
+│               │                          │ friendly place lookup or    │                    │
+│               │                          │ JSON output for scripts.    │                    │
+│ ✓ ready       │ 📦 healthcheck           │ Host security hardening     │ openclaw-bundled   │
+│               │                          │ and risk-tolerance          │                    │
+│               │                          │ configuration for OpenClaw  │                    │
+│               │                          │ deployments. Use when a     │                    │
+│               │                          │ user asks for security      │                    │
+│               │                          │ audits, firewall/SSH/       │                    │
+│               │                          │ update hardening, risk      │                    │
+│               │                          │ posture, exposure review,   │                    │
+│               │                          │ OpenClaw cron scheduling    │                    │
+│               │                          │ for periodic checks, or     │                    │
+│               │                          │ version status checks on a  │                    │
+│               │                          │ machine running OpenClaw    │                    │
+│               │                          │ (laptop, workstation, Pi,   │                    │
+│               │                          │ VPS).                       │                    │
+│ △ needs setup │ 📧 himalaya              │ CLI to manage emails via    │ openclaw-bundled   │
+│               │                          │ IMAP/SMTP. Use `himalaya`   │                    │
+│               │                          │ to list, read, write,       │                    │
+│               │                          │ reply, forward, search,     │                    │
+│               │                          │ and organize emails from    │                    │
+│               │                          │ the terminal. Supports      │                    │
+│               │                          │ multiple accounts and       │                    │
+│               │                          │ message composition with    │                    │
+│               │                          │ MML (MIME Meta Language).   │                    │
+│ △ needs setup │ 📨 imsg                  │ iMessage/SMS CLI for        │ openclaw-bundled   │
+│               │                          │ listing chats, history,     │                    │
+│               │                          │ and sending messages via    │                    │
+│               │                          │ Messages.app.               │                    │
+│ △ needs setup │ 📦 mcporter              │ Use the mcporter CLI to     │ openclaw-bundled   │
+│               │                          │ list, configure, auth, and  │                    │
+│               │                          │ call MCP servers/tools      │                    │
+│               │                          │ directly (HTTP or stdio),   │                    │
+│               │                          │ including ad-hoc servers,   │                    │
+│               │                          │ config edits, and CLI/type  │                    │
+│               │                          │ generation.                 │                    │
+│ △ needs setup │ 📊 model-usage           │ Use CodexBar CLI local      │ openclaw-bundled   │
+│               │                          │ cost usage to summarize     │                    │
+│               │                          │ per-model usage for Codex   │                    │
+│               │                          │ or Claude, including the    │                    │
+│               │                          │ current (most recent)       │                    │
+│               │                          │ model or a full model       │                    │
+│               │                          │ breakdown. Trigger when     │                    │
+│               │                          │ asked for model-level       │                    │
+│               │                          │ usage/cost data from        │                    │
+│               │                          │ codexbar, or when you need  │                    │
+│               │                          │ a scriptable per-model      │                    │
+│               │                          │ summary from codexbar cost  │                    │
+│               │                          │ JSON.                       │                    │
+│ △ needs setup │ 📄 nano-pdf              │ Edit PDFs with natural-     │ openclaw-bundled   │
+│               │                          │ language instructions       │                    │
+│               │                          │ using the nano-pdf CLI.     │                    │
+│ ✓ ready       │ 📦 node-connect          │ Diagnose OpenClaw node      │ openclaw-bundled   │
+│               │                          │ connection and pairing      │                    │
+│               │                          │ failures for Android, iOS,  │                    │
+│               │                          │ and macOS companion apps.   │                    │
+│               │                          │ Use when QR/setup code/     │                    │
+│               │                          │ manual connect fails,       │                    │
+│               │                          │ local Wi-Fi works but VPS/  │                    │
+│               │                          │ tailnet does not, or        │                    │
+│               │                          │ errors mention pairing      │                    │
+│               │                          │ required, unauthorized,     │                    │
+│               │                          │ bootstrap token invalid or  │                    │
+│               │                          │ expired, gateway.bind,      │                    │
+│               │                          │ gateway.remote.url,         │                    │
+│               │                          │ Tailscale, or plugins.      │                    │
+│               │                          │ entries.device-pair.config. │                    │
+│               │                          │ publicUrl.                  │                    │
+│ △ needs setup │ 📝 notion                │ Notion API for creating     │ openclaw-bundled   │
+│               │                          │ and managing pages,         │                    │
+│               │                          │ databases, and blocks.      │                    │
+│ △ needs setup │ 💎 obsidian              │ Work with Obsidian vaults   │ openclaw-bundled   │
+│               │                          │ (plain Markdown notes) and  │                    │
+│               │                          │ automate via obsidian-cli.  │                    │
+│ △ needs setup │ 🎤 openai-whisper        │ Local speech-to-text with   │ openclaw-bundled   │
+│               │                          │ the Whisper CLI (no API     │                    │
+│               │                          │ key).                       │                    │
+│ △ needs setup │ 🌐 openai-whisper-api    │ Transcribe audio via        │ openclaw-bundled   │
+│               │                          │ OpenAI Audio                │                    │
+│               │                          │ Transcriptions API          │                    │
+│               │                          │ (Whisper).                  │                    │
+│ △ needs setup │ 💡 openhue               │ Control Philips Hue lights  │ openclaw-bundled   │
+│               │                          │ and scenes via the OpenHue  │                    │
+│               │                          │ CLI.                        │                    │
+│ △ needs setup │ 🧿 oracle                │ Best practices for using    │ openclaw-bundled   │
+│               │                          │ the oracle CLI (prompt +    │                    │
+│               │                          │ file bundling, engines,     │                    │
+│               │                          │ sessions, and file          │                    │
+│               │                          │ attachment patterns).       │                    │
+│ △ needs setup │ 🛵 ordercli              │ Foodora-only CLI for        │ openclaw-bundled   │
+│               │                          │ checking past orders and    │                    │
+│               │                          │ active order status         │                    │
+│               │                          │ (Deliveroo WIP).            │                    │
+│ △ needs setup │ 👀 peekaboo              │ Capture and automate macOS  │ openclaw-bundled   │
+│               │                          │ UI with the Peekaboo CLI.   │                    │
+│ △ needs setup │ 🔊 sag                   │ ElevenLabs text-to-speech   │ openclaw-bundled   │
+│               │                          │ with mac-style say UX.      │                    │
+│ △ needs setup │ 📜 session-logs          │ Search and analyze your     │ openclaw-bundled   │
+│               │                          │ own session logs (older/    │                    │
+│               │                          │ parent conversations)       │                    │
+│               │                          │ using jq.                   │                    │
+│ △ needs setup │ 🔉 sherpa-onnx-tts       │ Local text-to-speech via    │ openclaw-bundled   │
+│               │                          │ sherpa-onnx (offline, no    │                    │
+│               │                          │ cloud)                      │                    │
+│ ✓ ready       │ 📦 skill-creator         │ Create, edit, improve, or   │ openclaw-bundled   │
+│               │                          │ audit AgentSkills. Use      │                    │
+│               │                          │ when creating a new skill   │                    │
+│               │                          │ from scratch or when asked  │                    │
+│               │                          │ to improve, review, audit,  │                    │
+│               │                          │ tidy up, or clean up an     │                    │
+│               │                          │ existing skill or SKILL.md  │                    │
+│               │                          │ file. Also use when         │                    │
+│               │                          │ editing or restructuring a  │                    │
+│               │                          │ skill directory (moving     │                    │
+│               │                          │ files to references/ or     │                    │
+│               │                          │ scripts/, removing stale    │                    │
+│               │                          │ content, validating         │                    │
+│               │                          │ against the AgentSkills     │                    │
+│               │                          │ spec). Triggers on phrases  │                    │
+│               │                          │ like "create a skill",      │                    │
+│               │                          │ "author a skill", "tidy up  │                    │
+│               │                          │ a skill", "improve this     │                    │
+│               │                          │ skill", "review the         │                    │
+│               │                          │ skill", "clean up the       │                    │
+│               │                          │ skill", "audit the skill".  │                    │
+│ △ needs setup │ 💬 slack                 │ Use when you need to        │ openclaw-bundled   │
+│               │                          │ control Slack from          │                    │
+│               │                          │ OpenClaw via the slack      │                    │
+│               │                          │ tool, including reacting    │                    │
+│               │                          │ to messages or pinning/     │                    │
+│               │                          │ unpinning items in Slack    │                    │
+│               │                          │ channels or DMs.            │                    │
+│ △ needs setup │ 🌊 songsee               │ Generate spectrograms and   │ openclaw-bundled   │
+│               │                          │ feature-panel               │                    │
+│               │                          │ visualizations from audio   │                    │
+│               │                          │ with the songsee CLI.       │                    │
+│ △ needs setup │ 🔊 sonoscli              │ Control Sonos speakers      │ openclaw-bundled   │
+│               │                          │ (discover/status/play/      │                    │
+│               │                          │ volume/group).              │                    │
+│ △ needs setup │ 🎵 spotify-player        │ Terminal Spotify playback/  │ openclaw-bundled   │
+│               │                          │ search via spogo            │                    │
+│               │                          │ (preferred) or spotify_     │                    │
+│               │                          │ player.                     │                    │
+│ △ needs setup │ 🧾 summarize             │ Summarize or extract text/  │ openclaw-bundled   │
+│               │                          │ transcripts from URLs,      │                    │
+│               │                          │ podcasts, and local files   │                    │
+│               │                          │ (great fallback for         │                    │
+│               │                          │ “transcribe this YouTube/   │                    │
+│               │                          │ video”).                    │                    │
+│ ✓ ready       │ 🪝 taskflow              │ Use when work should span   │ openclaw-bundled   │
+│               │                          │ one or more detached tasks  │                    │
+│               │                          │ but still behave like one   │                    │
+│               │                          │ job with a single owner     │                    │
+│               │                          │ context. TaskFlow is the    │                    │
+│               │                          │ durable flow substrate      │                    │
+│               │                          │ under authoring layers      │                    │
+│               │                          │ like Lobster, ACPX,         │                    │
+│               │                          │ plugins, or plain code.     │                    │
+│               │                          │ Keep conditional logic in   │                    │
+│               │                          │ the caller; use TaskFlow    │                    │
+│               │                          │ for flow identity, child-   │                    │
+│               │                          │ task linkage, waiting       │                    │
+│               │                          │ state, revision-checked     │                    │
+│               │                          │ mutations, and user-facing  │                    │
+│               │                          │ emergence.                  │                    │
+│ ✓ ready       │ 📥 taskflow-inbox-triage │ Example TaskFlow authoring  │ openclaw-bundled   │
+│               │                          │ pattern for inbox triage.   │                    │
+│               │                          │ Use when messages need      │                    │
+│               │                          │ different treatment based   │                    │
+│               │                          │ on intent, with some        │                    │
+│               │                          │ routes notifying            │                    │
+│               │                          │ immediately, some waiting   │                    │
+│               │                          │ on outside answers, and     │                    │
+│               │                          │ others rolling into a       │                    │
+│               │                          │ later summary.              │                    │
+│ △ needs setup │ ✅ things-mac            │ Manage Things 3 via the     │ openclaw-bundled   │
+│               │                          │ `things` CLI on macOS (add/ │                    │
+│               │                          │ update projects+todos via   │                    │
+│               │                          │ URL scheme; read/search/    │                    │
+│               │                          │ list from the local Things  │                    │
+│               │                          │ database). Use when a user  │                    │
+│               │                          │ asks OpenClaw to add a      │                    │
+│               │                          │ task to Things, list inbox/ │                    │
+│               │                          │ today/upcoming, search      │                    │
+│               │                          │ tasks, or inspect projects/ │                    │
+│               │                          │ areas/tags.                 │                    │
+│ △ needs setup │ 🧵 tmux                  │ Remote-control tmux         │ openclaw-bundled   │
+│               │                          │ sessions for interactive    │                    │
+│               │                          │ CLIs by sending keystrokes  │                    │
+│               │                          │ and scraping pane output.   │                    │
+│ △ needs setup │ 📋 trello                │ Manage Trello boards,       │ openclaw-bundled   │
+│               │                          │ lists, and cards via the    │                    │
+│               │                          │ Trello REST API.            │                    │
+│ △ needs setup │ 🎬 video-frames          │ Extract frames or short     │ openclaw-bundled   │
+│               │                          │ clips from videos using     │                    │
+│               │                          │ ffmpeg.                     │                    │
+│ △ needs setup │ 📞 voice-call            │ Start voice calls via the   │ openclaw-bundled   │
+│               │                          │ OpenClaw voice-call plugin. │                    │
+│ △ needs setup │ 📱 wacli                 │ Send WhatsApp messages to   │ openclaw-bundled   │
+│               │                          │ other people or search/     │                    │
+│               │                          │ sync WhatsApp history via   │                    │
+│               │                          │ the wacli CLI (not for      │                    │
+│               │                          │ normal user chats).         │                    │
+│ ✓ ready       │ ☔ weather               │ Get current weather and     │ openclaw-bundled   │
+│               │                          │ forecasts via wttr.in or    │                    │
+│               │                          │ Open-Meteo. Use when: user  │                    │
+│               │                          │ asks about weather,         │                    │
+│               │                          │ temperature, or forecasts   │                    │
+│               │                          │ for any location. NOT for:  │                    │
+│               │                          │ historical weather data,    │                    │
+│               │                          │ severe weather alerts, or   │                    │
+│               │                          │ detailed meteorological     │                    │
+│               │                          │ analysis. No API key        │                    │
+│               │                          │ needed.                     │                    │
+│ △ needs setup │ 🐦 xurl                  │ A CLI tool for making       │ openclaw-bundled   │
+│               │                          │ authenticated requests to   │                    │
+│               │                          │ the X (Twitter) API. Use    │                    │
+│               │                          │ this skill when you need    │                    │
+│               │                          │ to post tweets, reply,      │                    │
+│               │                          │ quote, search, read posts,  │                    │
+│               │                          │ manage followers, send      │                    │
+│               │                          │ DMs, upload media, or       │                    │
+│               │                          │ interact with any X API v2  │                    │
+│               │                          │ endpoint.                   │                    │
+│ ✓ ready       │ 📦 job_auto_apply        │ Autonomous job-application  │ openclaw-workspace │
+│               │                          │ agent. Searches target      │                    │
+│               │                          │ company career pages,       │                    │
+│               │                          │ finds matching roles, and   │                    │
+│               │                          │ applies using the browser   │                    │
+│               │                          │ tool + candidate profile    │                    │
+│               │                          │ from config.yaml. All page  │                    │
+│               │                          │ interaction is adaptive     │                    │
+│               │                          │ via LLM reasoning — no      │                    │
+│               │                          │ hardcoded selectors.        │                    │
+└───────────────┴──────────────────────────┴─────────────────────────────┴────────────────────┘
+
+Tip: use `openclaw skills search`, `openclaw skills install`, and `openclaw skills update` for ClawHub-backed skills.
+
+Annanya@DESKTOP-9CH6VT7 MINGW32 ~/Downloads/project/APPLY/openclaw (main)
+$ pnpm openclaw doctor
+
+> openclaw@2026.4.11 openclaw C:\Users\Annanya\Downloads\project\APPLY\openclaw
+> node scripts/run-node.mjs "doctor"
+
+
+🦞 OpenClaw 2026.4.11 (2681bbd) — iMessage green bubble energy, but for everyone.
+
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██░▄▄▄░██░▄▄░██░▄▄▄██░▀██░██░▄▄▀██░████░▄▄▀██░███░██
+██░███░██░▀▀░██░▄▄▄██░█░█░██░█████░████░▀▀░██░█░█░██
+██░▀▀▀░██░█████░▀▀▀██░██▄░██░▀▀▄██░▀▀░█░██░██▄▀▄▀▄██
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+                  🦞 OPENCLAW 🦞                    
+ 
+┌  OpenClaw doctor
+│
+◇  Update ──────────────────────────────────────────────────────────────────────────╮
+│                                                                                   │
+│  This install is not a git checkout.                                              │
+│  Run `openclaw update` to update via your package manager (npm/pnpm), then rerun  │
+│  doctor.                                                                          │
+│                                                                                   │
+├───────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Doctor changes ─────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  openrouter/deepseek/deepseek-chat model configured, enabled automatically.  │
+│  deepseek/deepseek-chat model configured, enabled automatically.             │
+│  browser configured, enabled automatically.                                  │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Apply recommended config repairs now?
+│  Yes
+│
+◇  Gateway ──────────────────────────────────────────────────────────╮
+│                                                                    │
+│  gateway.mode is unset; gateway start will be blocked.             │
+│  Fix: run openclaw configure and set Gateway mode (local/remote).  │
+│  Or set directly: openclaw config set gateway.mode local           │
+│                                                                    │
+├────────────────────────────────────────────────────────────────────╯
+│
+◇  Gateway auth ──────────────────────────────────────────────────────────────────────╮
+│                                                                                     │
+│  Gateway auth is off or missing a token. Token auth is now the recommended default  │
+│  (including loopback).                                                              │
+│                                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Generate and configure a gateway token now?
+│  Yes
+│
+◇  Gateway auth ──────────────╮
+│                             │
+│  Gateway token configured.  │
+│                             │
+├─────────────────────────────╯
+│
+◇  State integrity ───────────────────────────────────────────────────────────────╮
+│                                                                                 │
+│  - OAuth dir not present (~\.openclaw\credentials). Skipping create because no  │
+│    WhatsApp/pairing channel config is active.                                   │
+│                                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Security ─────────────────────────────────╮
+│                                            │
+│  - No channel security warnings detected.  │
+│  - Run: openclaw security audit --deep     │
+│                                            │
+├────────────────────────────────────────────╯
+│
+◇  Browser ──────────────────────────────────────────────────────────────────────────────╮
+│                                                                                        │
+│  - Chrome MCP existing-session is configured for profile(s): jobsearch.                │
+│  - These profiles use an explicit Chromium user data directory instead of Chrome's     │
+│    default auto-connect path.                                                          │
+│  - Verify the matching Chromium-based browser is version 144+ on the same host as the  │
+│    Gateway or node.                                                                    │
+│  - Enable remote debugging in that browser's inspect page                              │
+│    (chrome://inspect/#remote-debugging, brave://inspect/#remote-debugging,             │
+│    edge://inspect/#remote-debugging).                                                  │
+│  - Keep the browser running and accept the attach consent prompt the first time        │
+│    OpenClaw connects.                                                                  │
+│                                                                                        │
+├────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Skills status ────────────╮
+│                            │
+│  Eligible: 8               │
+│  Missing requirements: 45  │
+│  Blocked by allowlist: 0   │
+│                            │
+├────────────────────────────╯
+│
+◇  Plugins ──────╮
+│                │
+│  Loaded: 54    │
+│  Imported: 54  │
+│  Disabled: 45  │
+│  Errors: 0     │
+│                │
+├────────────────╯
+│
+◇  
+│
+◇  Gateway ──────────────╮
+│                        │
+│  Gateway not running.  │
+│                        │
+├────────────────────────╯
+│
+◇  Gateway connection ───────────────────────────────╮
+│                                                    │
+│  Gateway target: ws://127.0.0.1:18789              │
+│  Source: local loopback                            │
+│  Config: C:\Users\Annanya\.openclaw\openclaw.json  │
+│  Bind: loopback                                    │
+│                                                    │
+├────────────────────────────────────────────────────╯
+14:51:28+05:30 [memory] fts unavailable: no such module: fts5
+│
+◇  Memory search ─────────────────────────────────────────────────────────────────────────╮
+│                                                                                         │
+│  Memory search is enabled, but no embedding provider is ready.                          │
+│  Semantic recall needs at least one embedding provider.                                 │
+│                                                                                         │
+│                                                                                         │
+│  Fix (pick one):                                                                        │
+│  - Set OPENAI_API_KEY, GEMINI_API_KEY, GOOGLE_API_KEY, VOYAGE_API_KEY, MISTRAL_API_KEY  │
+│    in your environment                                                                  │
+│  - Configure credentials: openclaw configure --section model                            │
+│  - For local embeddings: configure agents.defaults.memorySearch.provider and local      │
+│    model path                                                                           │
+│  - To disable: openclaw config set agents.defaults.memorySearch.enabled false           │
+│                                                                                         │
+│  Verify: openclaw memory status --deep                                                  │
+│                                                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────╯
+14:51:35+05:30 [memory] fts unavailable: no such module: fts5
+│
+◇  Gateway ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                       │
+│  Runtime: stopped (Startup-folder login item installed; no listener detected on port  │
+│  18789.)                                                                              │
+│  Service is loaded but not running (likely exited immediately).                       │
+│  File logs: C:\Users\Annanya\AppData\Local\Temp\openclaw\openclaw-2026-04-11.log      │
+│  Logs: schtasks /Query /TN "OpenClaw Gateway" /V /FO LIST                             │
+│                                                                                       │
+├───────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Start gateway service now?
+│  No
+Config overwrite: C:\Users\Annanya\.openclaw\openclaw.json (sha256 25b62a5a041949820dc735bd5358e43a8350e1bb4eb4f20207fd169572220011 -> be5d5c148baa9ec71c10e5781b18da38e7a78cbb81390ce9ec2ff18d91c95844, backup=C:\Users\Annanya\.openclaw\openclaw.json.bak)
+Config write anomaly: C:\Users\Annanya\.openclaw\openclaw.json (missing-meta-before-write)
+Config observe anomaly: C:\Users\Annanya\.openclaw\openclaw.json (gateway-mode-missing-vs-last-good)
+Updated ~\.openclaw\openclaw.json
+Backup: ~\.openclaw\openclaw.json.bak
+│
+└  Doctor complete.
